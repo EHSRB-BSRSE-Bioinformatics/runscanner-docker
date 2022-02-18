@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  runscanner:
+    image: runscanner
+    ports:
+      - 9111:8080
+    volumes:
+      - ./persist/site.xml:/usr/local/tomcat/conf/Catalina/localhost/${CONTEXT}.xml
+      - ./persist/runscanner.json:/etc/runscanner.json
+      - ${LOCATION1}:/mnt/sequencer/NextSeq500:ro

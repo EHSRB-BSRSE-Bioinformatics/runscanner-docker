@@ -1,0 +1,9 @@
+[
+  {
+    "path": "/mnt/sequencer/NextSeq500",
+    "platformType": "ILLUMINA",
+    "name": "Itchy",
+    "timeZone": "America/Toronto",
+    "parameters": {}
+  }
+]
