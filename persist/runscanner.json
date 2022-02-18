@@ -2,8 +2,8 @@
   {
     "path": "/srv/sequencer/NextSeq500",
     "platformType": "ILLUMINA",
-    "name": "Itchy",
+    "name": "default",
     "timeZone": "America/Toronto",
-    "parameters": {}
+    "parameters": { "checkOutput": true }
   }
 ]
