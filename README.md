@@ -4,7 +4,7 @@ A containerized version of Run Scanner for MISO-LIMS
 
 # Building the container
 
-To get this running, you will need to clone the repository (`https://github.com/EHSRB-BSRSE-Bioinformatics/runscanner-docker.git`).
+To get this running, you will need to clone the repository (`git clone https://github.com/EHSRB-BSRSE-Bioinformatics/runscanner-docker.git`).
 
 Then, build the docker container (first entering the proper directory with `cd runscanner-docker`) using `docker build ./build`. This might take a few minutes since it has to download and compile some software.
 
