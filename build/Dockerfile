@@ -46,4 +46,9 @@ RUN git clone https://github.com/miso-lims/runscanner.git
 WORKDIR ./runscanner
 RUN mvn clean package
 RUN cp ${CATALINA_HOME}/runscanner/scanner/target/scanner*war ${CATALINA_HOME}/webapps/${CONTEXT}.war
+
+RUN git submodule init && git submodule update && \
+  cd ./runscanner-illumina && \
+  ./build-illumina-interop && autoreconf -i && ./configure && make && make install
+
 CMD ["catalina.sh", "run"]
