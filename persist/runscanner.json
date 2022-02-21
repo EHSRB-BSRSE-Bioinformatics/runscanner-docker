@@ -5,5 +5,19 @@
     "name": "default",
     "timeZone": "America/Toronto",
     "parameters": { "checkOutput": true }
+  },
+  {
+    "path": "/srv/sequencer/NextSeq500_2",
+    "platformType": "ILLUMINA",
+    "name": "default",
+    "timeZone": "America/Toronto",
+    "parameters": { "checkOutput": true }
+  },
+  {
+    "path": "/srv/sequencer/NextSeq500_3",
+    "platformType": "ILLUMINA",
+    "name": "default",
+    "timeZone": "America/Toronto",
+    "parameters": { "checkOutput": true }
   }
 ]
