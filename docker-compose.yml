@@ -8,6 +8,8 @@ services:
     volumes:
       - ./persist/site.xml:/usr/local/tomcat/conf/Catalina/localhost/${CONTEXT}.xml
       - ./persist/runscanner.json:/etc/runscanner.json
-      - ${LOCATION1}:/srv/sequencer/NextSeq500
+      - ${LOCATION1}:/srv/sequencer/NextSeq500:ro
+      - ${LOCATION2}:/srv/sequencer/NextSeq500_2:ro
+      - ${LOCATION3}:/srv/sequencer/NextSeq500_3:ro
     environment:
       - RUN_SCANNER_HOME=/usr/local/tomcat/webapps/${CONTEXT}
